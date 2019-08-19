@@ -1,0 +1,31 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+{% block content %}
+{% if messages %}
+{% for message in messages %}
+<div class="alert-alert-{{message.tags}}">
+    {{message}}
+</div>
+{% endfor%}
+{% endif%}
+<div class="container">
+    <div class="row pt-2">
+        <div class="col">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Xo1paD_ssPM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9xZ5ntCmnzw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+    <div class="col">
+        {% for post in posts%}
+  <div  class="border p-3 mb-3">
+      <img class="img-fluid rounded-circle border m-2"  width="50px" src="{%static 'blog/images/person1.jpg'%}"     alt="picture">
+      <span class="text-secondary">  {{post.post_date|date:'d-m-Y'}}نشر في
+      </span>
+      <h3><a class="text-dark" href="{% url 'detail' post.id %}" >{{post.title}}</a></h3>
+      <p>{{post.content}}</p>
+  </div>
+{% endfor %}
+{% endblock content %}
+    </div>
+    </div>
+    </div>

@@ -1,0 +1,116 @@
+
+{% extends 'blog/base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+
+<div class="section" >
+<div class="bd-example pt-4">
+  <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel ">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner ">
+      <div class="carousel-item active  ">
+        <img src="{%static 'blog/images/ball.jpg'%}" class="d-block w-100" width="700" height="450" alt="...">
+        <div class="carousel-caption d-none d-md-block ">
+
+
+        </div>
+      </div>
+      <div class="carousel-item ">
+        <img src="{%static 'blog/images/images.jpg'%}" class="d-block w-100"width="80" height="450" alt="...">
+        <div class="carousel-caption d-none d-md-block ">
+
+
+        </div>
+      </div>
+      <div class="carousel-item  ">
+        <img src="{%static 'blog/images/images1.jpg'%}" class="d-block w-100"  width="80" height="450"alt="...">
+        <div class="carousel-caption d-none d-md-block ">
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+<div  class="bg-white" >
+         <div class="container">
+<div class="row mt-4 padding-top -6 ">
+
+  <div class="col col-sm-6 col-md-12 col-lg-4 pt-3 pb-3">
+    <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+ <div class="card-header">من نحن</div>
+
+    <div class="card-body pt-3 ">
+
+      <p class="card-text"> مجموعة تهدف الى تطوير المواهب والافكار للمجتمع العربي بصورة عامة وللمجتمع العراقي بصورة خاصة وزيادة المهارات والابداعات في مجال البرمجة التي تعتبر اساس التقدم والتكنلوجي</p>
+
+
+  </div>
+  </div>
+    </div>
+<div class="col col-sm-6 col-md-12 col-lg-4 pt-3 pb-3">
+    <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+ <div class="card-header"> تواصل معنا عبر مواقع التواصل الاجتماعي</div>
+
+    <div class="card-body pt-3 ">
+
+      <p class="card-text"><a href="#" ><i class="fab fa-facebook-square fa-2x"></i></a>
+        <a href="#" >   <i class="fab fa-twitter-square fa-2x"></i></a>
+        <a href="#" >   <i class="fab fa-twitter-square fa-2x"></i></a>
+</p>
+<p>:وعبر الارقام التالية
+    0799999999999
+    078000000000</p>
+
+  </div>
+  </div>
+    </div>
+
+<div class="col col-sm-6 col-md-12 col-lg-4 pt-3 pb-3">
+    <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+ <div class="card-header">مواقع مهمه</div>
+
+    <div class="card-body pt-3 ">
+
+      <p class="card-text">
+        <ul>
+          <li ><a href="https://arabia.eurosport.com/">الموقع الاول</li></a>
+        <li ><a href="https://www.kooora.com/">الموقع الثاني</li></a>
+        <li ><a href="#">الموقع الثالث</li></a>
+        <li ><a href="#">الموقع ارابع</li></a>
+
+
+     </ul> </p>
+
+
+  </div>
+  </div>
+    </div>
+
+
+
+</div>
+
+</div>
+</div>
+</div>
+
+
+
+{% endblock content %}

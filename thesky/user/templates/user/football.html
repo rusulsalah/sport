@@ -1,0 +1,15 @@
+{% extends 'blog/base.html' %}
+{% block content %}
+
+<h2 class="m-2 p-1 text-center ">كرة القدم</h2>
+{% for test in footballs%}
+  <div  class="border p-3 mb-3">
+
+      <h3>{{ test.title}}</a></h3>
+
+
+      <p>{{ test.content}}</p>
+
+  </div>
+{% endfor %}
+{% endblock content %}
